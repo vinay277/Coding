@@ -1,0 +1,16 @@
+Program to generate the fibanocci numbers
+
+function fibanocci(num) {
+let arr = [];
+  for(i=0;i<num;i++) {
+    if (!arr.length) {
+      arr.push(i);
+      arr.push(i+1);
+    } else {
+      arr.push(arr[arr.length - 1] + arr[arr.length - 2]);
+    }
+  }
+  console.log(arr);
+}
+
+fibanocci(9);
